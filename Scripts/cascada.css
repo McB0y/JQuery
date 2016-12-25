@@ -21,10 +21,19 @@ h1{
    color:white;
    text-align: center;
 }
+
+.tituCol{
+color: red;
+font-size: 3em;
+}
 .parallax-window{
    height: 100vh;
    width: 100%;
 }
 div{
    width: 100%;
+}
+
+footer:nth-of-type(1){
+   background-color: green;
 }
