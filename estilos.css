@@ -40,7 +40,7 @@ h2,h3{
    text-indent: 20px;
 }
 
-.dividida,.superPolifil,.productos, .socios,footer{
+.superPolifil,.productos, .socios,footer{
    width: 100%;
 }
 .parrafo{
@@ -53,18 +53,32 @@ h2,h3{
 
 /***********************Terminan los estilos de la cabecera*********************/
 
-
+/***********************Empiezan los estilos para el main y sus elementos******/
 
 .parallax{
    width: 100%;
    height: 600px;
 }
+.empresa{
+   display: flex;
+   flex-wrap: wrap;
+}
+.superPolifil{
+   display: flex;
+   width: 100%;
+   height: 100vh;
+   flex-wrap: wrap;
+}
+h3{
+   line-height: 100px;
+}
 
 
 
+/***********************Terminan los estilos del main y sus elementos*********/
 
 
-/*****************Tiny tweaks****************/
+/*****************Tiny-Tweaks , Off-Canvas****************/
 
 
 @media (max-width: 1200px){
