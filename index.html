@@ -3,10 +3,9 @@
    <head>
       <meta charset="utf-8">
       <title>Web one</title>
+      <link rel="stylesheet" href="Swiper-master/dist/css/swiper.min.css">
       <link rel="stylesheet" href="estilos.css">
       <link rel="shortcut icon" href="favicon.ico">
-      <!-- Bootstrap -->
-     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
    </head>
    <body onload="cargar_mapa()">
       <header>
@@ -25,15 +24,56 @@
       <main>
          <section>
 
-            <div class="carrusel">
-            <!--Un carrusel sencillo.-->
-            <span>Carrusel.</span>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <!-- Swiper -->
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <picture>
+                          <source srcset="Plugs_Scripts/Img/Construccion.jpg" media="(orientation:portrait)">
+                          <source srcset="Plugs_Scripts/Img/Construccion.jpg" media="(orientation:landscape)">
+                         <source srcset="Plugs_Scripts/Img/Construccion.jpg">
+                         <img class="carrusel" src="Plugs_Scripts/Img/Construccion.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                    <div class="swiper-slide">
+                       <picture>
+                         <source srcset="Plugs_Scripts/Img/constructor.jpg" media="(orientation:portrait)">
+                         <source srcset="Plugs_Scripts/Img/constructor.jpg" media="(orientation:landscape)">
+                        <source srcset="Plugs_Scripts/Img/constructor.jpg">
+                        <img class="carrusel" src="Plugs_Scripts/Img/constructor.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                    <div class="swiper-slide">
+                       <picture>
+                         <source srcset="Plugs_Scripts/Img/Construccion2.jpg" media="(orientation:portrait)">
+                         <source srcset="Plugs_Scripts/Img/Construccion2.jpg" media="(orientation:landscape)">
+                        <source srcset="Plugs_Scripts/Img/Construccion2.jpg">
+                        <img class="carrusel" src="Plugs_Scripts/Img/Construccion2.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                    <div class="swiper-slide">
+                       <picture>
+                        <source srcset="Plugs_Scripts/Img/excavator.jpg" media="(orientation:portrait)">
+                        <source srcset="Plugs_Scripts/Img/excavator.jpg" media="(orientation:landscape)">
+                        <source srcset="Plugs_Scripts/Img/excavator.jpg">
+                        <img class="carrusel" src="Plugs_Scripts/Img/excavator.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                    <div class="swiper-slide">
+                       <picture>
+                        <source srcset="Plugs_Scripts/Img/poz.jpg" media="(orientation:portrait)">
+                        <source srcset="Plugs_Scripts/Img/poz.jpg" media="(orientation:landscape)">
+                        <source srcset="Plugs_Scripts/Img/poz.jpg">
+                        <img class="carrusel" src="Plugs_Scripts/Img/poz.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                </div>
+                
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
+
 
             <div class="empresa">
                <h2>Grupo Magnate.</h2>
@@ -156,6 +196,20 @@
    <script src="script.js" charset="utf-8"></script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqPSHyvqJ6J6hqnV6w-ErMQ11b6Y_g3nw" async defer></script>
    <script src="Plugs_Scripts/JQuery_Plugins/app.js" charset="utf-8"></script>
+   <script src="Swiper-master/dist/js/swiper.jquery.min.js" charset="utf-8"></script>
+
+
+   <!--Inicia el Slider -->
+
+   <script>
+   $(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+     pagination: '.swiper-pagination',
+     paginationClickable: true
+     });
+  });
+   </script>
 
    </body>
 </html>
