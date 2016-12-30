@@ -25,8 +25,14 @@
 
    }
 
+   var cuerpo = document.querySelector("body");
 
-   function cargar_mapa() {
+      cuerpo.addEventListener("load", function(event) {
+      cargar_mapa();
+      });
+
+
+   function cargar_mapa(){
 
       var myOptions= {
          zoom : 15,
@@ -48,5 +54,7 @@
       });
 
       arregloPines.push(pin);
+
+
 
    };
