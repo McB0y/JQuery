@@ -127,7 +127,25 @@ h3{
     align-items: center;
 }
 
+
+/***********************Muestras.**************************/
+
+.productos{
+   width: 100%;
+   height: 600px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.servicios{
+   width: calc((100%/4) - 2.5%);
+   margin: 2.5%;
+}
+
+
 /*****************Tiny-Tweaks , Off-Canvas****************/
+
 
 
 @media (max-width: 1200px){
