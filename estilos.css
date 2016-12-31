@@ -1,4 +1,4 @@
-*{margin: 0px; padding: 0px;}
+*,p{margin: 0px; padding: 0px;}
 
 body{
    width: 100%;
@@ -8,21 +8,37 @@ body{
    flex-direction: column;
 }
 
+img{
+   max-width: 100%;
+}
+picture{
+   width: 90%;
+}
+
 /* NOTE: Empiezan los estilos de la cabecera */
 header{
    width: 100%;
    height: 8em;
-   background-color: rgb(233, 106, 82);
+   background-color: rgb(245, 64, 29);
    display: flex;
    flex-direction: column;
    align-items: center;
    font-size: 2em;
 }
-
-
+h1{
+   font-family: Playfair Display;
+   color: rgb(242, 205, 7);
+}
+.iconos{
+   margin-top: 10px;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
 nav{
    width: 100%;
-   margin-top: 3em;
+   margin-top: 1em;
 }
 
 nav>ul{
@@ -59,6 +75,7 @@ h2,h3{
    width: 100%;
    height: 600px;
 }
+
 .empresa{
    display: flex;
    flex-wrap: wrap;
@@ -75,10 +92,90 @@ h3{
 
 
 
-/***********************Terminan los estilos del main y sus elementos*********/
+/***********************Swiper Slider*********/
+.swiper-container {
+   margin-top: 2em;
+   margin-bottom: 2em;
+    width: 100%;
+    height: 90vh;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/***********************Muestras.**************************/
+
+.productos{
+   width: 100%;
+   height: 600px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.servicios{
+   width: calc((100%/4) - 2.5%);
+   margin: 2.5%;
+}
+
+
+.contenedor{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 300px;
+   background-color: rgb(225, 170, 242);
+}
+
+.elemento{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+.elemento > img{
+   height: 300px;
+}
+
+.deImg{
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.8);
+   color: white;
+   font-size: 1.2em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: -304px;
+   transition: all .5s;
+}
+.deImg:hover{
+top: 0;
+}
 
 /*****************Tiny-Tweaks , Off-Canvas****************/
+
 
 
 @media (max-width: 1200px){
@@ -94,6 +191,7 @@ h3{
 }
 
 @media (max-width: 720px){
+
    h1{
       font-size: 1.3em;
    }
@@ -117,16 +215,24 @@ h3{
    line-height: 5em;
    text-align: center;
    font-weight: bold;
-   z-index: 1;
+   z-index: 2;
    }
 
    .elem{
       width: 100%;
-      background-color: rgb(246, 152, 75);
+      background-color:rgb(245, 64, 29);
+      color: rgb(249, 241, 50);
+      border-bottom: 1px solid;
    }
 
    .open{
       /* NOTE: Se agrega con JS */
       transform: translate(0,0);
+   }
+   #menuBoton{
+      margin-top: 5px;
+      width: 32px;
+      height: 32px;
+      background: url("Plugs_Scripts/Imagenes/menu2.png");
    }
 }

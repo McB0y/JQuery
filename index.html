@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>Web one</title>
+      <link rel="stylesheet" href="Swiper-master/dist/css/swiper.min.css">
       <link rel="stylesheet" href="estilos.css">
       <script
      src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -11,13 +12,25 @@
      </script>
       <script src="Plugs_Scripts/JQuery_Plugins/parallax.min.js" charset="utf-8"></script>
       <script src="script.js" charset="utf-8"></script>
+      <link rel="shortcut icon" href="Plugs_Scripts/Imagenes/trucking.png">
+      <link href="https://fonts.googleapis.com/css?family=Aclonica|Acme|Alegreya|Anton|Baloo+Thambi|EB+Garamond|Exo+2|Fjalla+One|Lobster|Lora|Merriweather|Open+Sans+Condensed:300|Oswald|PT+Sans|PT+Serif+Caption|Pathway+Gothic+One|Playfair+Display" rel="stylesheet">
+
    </head>
    <body>
       <header>
-         <h1>Soy el título de la página web.</h1>
+
+         <div class="iconos">
+         <img src="Plugs_Scripts/Imagenes/trucking.png" alt="equipo_de_perforación">
+         <img src="Plugs_Scripts/Imagenes/trucking1.png" alt="enlechadora">
+         <img src="Plugs_Scripts/Imagenes/trucking2.png" alt="enlechadora">
+         <img src="Plugs_Scripts/Imagenes/trucking3.png" alt="enlechadora">
+         </div>
+         <h1>Grupo Magnate.</h1>
+
+            <div id="menuBoton"></div>
          <nav>
             <ul class="off-canvas">
-               <li class="elem">Home.</li>
+               <li class="elem">Inicio.</li>
                <li class="elem">Empresa.</li>
                <li class="elem">Equipo.</li>
                <li class="elem">Productos.</li>
@@ -29,15 +42,48 @@
       <main>
          <section>
 
-            <div class="carrusel">
-            <!--Un carrusel sencillo.-->
-            <span>Carrusel.</span>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <!-- Swiper -->
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <picture>
+                          <source srcset="Plugs_Scripts/Img/Construccion.jpg" media="(orientation:portrait)">
+                          <source srcset="Plugs_Scripts/Img/Construccion.jpg" media="(orientation:landscape)">
+                         <source srcset="Plugs_Scripts/Img/Construccion.jpg">
+                         <img class="carrusel" src="Plugs_Scripts/Img/Construccion.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                    <div class="swiper-slide">
+                       <picture>
+                         <source srcset="Plugs_Scripts/Img/constructor.jpg" media="(orientation:portrait)">
+                         <source srcset="Plugs_Scripts/Img/constructor.jpg" media="(orientation:landscape)">
+                        <source srcset="Plugs_Scripts/Img/constructor.jpg">
+                        <img class="carrusel" src="Plugs_Scripts/Img/constructor.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                    <div class="swiper-slide">
+                       <picture>
+                        <source srcset="Plugs_Scripts/Img/excavator.jpg" media="(orientation:portrait)">
+                        <source srcset="Plugs_Scripts/Img/excavator.jpg" media="(orientation:landscape)">
+                        <source srcset="Plugs_Scripts/Img/excavator.jpg">
+                        <img class="carrusel" src="Plugs_Scripts/Img/excavator.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                    <div class="swiper-slide">
+                       <picture>
+                        <source srcset="Plugs_Scripts/Img/poz.jpg" media="(orientation:portrait)">
+                        <source srcset="Plugs_Scripts/Img/poz.jpg" media="(orientation:landscape)">
+                        <source srcset="Plugs_Scripts/Img/poz.jpg">
+                        <img class="carrusel" src="Plugs_Scripts/Img/poz.jpg" alt="Construcción">
+                       </picture>
+                    </div>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
+
 
             <div class="empresa">
                <h2>Grupo Magnate.</h2>
@@ -71,7 +117,7 @@
                   <li class="parrafo">Equipo usado</li>
                </ul>
             </div>
-            <div class="parallax" data-parallax="scroll" data-image-src="/Plugs_Scripts/Img/Constructor.jpg" >
+            <div class="parallax" data-parallax="scroll" data-image-src="/Plugs_Scripts/Imagenes/excavators2.jpg">
 
             </div>
 
@@ -102,16 +148,57 @@
                   </p>
                </div>
 
-               <div class="parallax" data-parallax="scroll" data-image-src="/Plugs_Scripts/Img/Construccion.jpg">
+               <div class="parallax" data-parallax="scroll" data-image-src="/Plugs_Scripts/Imagenes/excavators5.jpg">
                   <!--Aqui solo queremos un slider-->
                </div>
             </div>
 
 
-            <div class="productos">
-               <div class="servicios">El primer servicio que se ofrece</div>
-               <div class="servicios">El segundo servicio que se ofrece</div>
-               <div class="servicios">El tercero servicio que se ofrece</div>
+            <!-- <div class="productos">
+               <picture class="servicios">
+                <source srcset="Plugs_Scripts/Imagenes/drill.jpg" media="(orientation:portrait)">
+                <source srcset="Plugs_Scripts/Imagenes/drill.jpg" media="(orientation:landscape)">
+                <source srcset="Plugs_Scripts/Imagenes/drill.jpg">
+                <img src="Plugs_Scripts/Imagenes/drill.jpg" alt="Construcción">
+               </picture>
+               <picture class="servicios">
+                <source srcset="Plugs_Scripts/Imagenes/drill3.jpg" media="(orientation:portrait)">
+                <source srcset="Plugs_Scripts/Imagenes/drill3.jpg" media="(orientation:landscape)">
+                <source srcset="Plugs_Scripts/Imagenes/drill3.jpg">
+                <img src="Plugs_Scripts/Imagenes/drill3.jpg" alt="Construcción">
+               </picture>
+               <picture class="servicios">
+                <source srcset="Plugs_Scripts/Imagenes/drill6.jpg" media="(orientation:portrait)">
+                <source srcset="Plugs_Scripts/Imagenes/drill6.jpg" media="(orientation:landscape)">
+                <source srcset="Plugs_Scripts/Imagenes/drill6.jpg">
+                <img src="Plugs_Scripts/Imagenes/drill6.jpg" alt="Construcción">
+               </picture>
+               <picture class="servicios">
+                <source srcset="Plugs_Scripts/Imagenes/drill9.jpg" media="(orientation:portrait)">
+                <source srcset="Plugs_Scripts/Imagenes/drill9.jpg" media="(orientation:landscape)">
+                <source srcset="Plugs_Scripts/Imagenes/drill9.jpg">
+                <img src="Plugs_Scripts/Imagenes/drill9.jpg" alt="Construcción">
+               </picture>
+            </div> -->
+
+
+            <div class="contenedor">
+               <div class="elemento">
+                   <img src="Plugs_Scripts/Imagenes/drill.jpg" max-width="100%"alt="kit_de_broca_para_concreto">
+                  <p class="deImg">Kit de brocas para concreto.</p>
+               </div>
+               <div class="elemento">
+                  <img src="Plugs_Scripts/Imagenes/drill3.jpg" max-width="100%"alt="Broca_para_concreto">
+                  <p class="deImg">Brocas para concreto.</p>
+               </div>
+               <div class="elemento">
+                  <img src="Plugs_Scripts/Imagenes/drill6.jpg" max-width="100%"alt="Broca_multiusos">
+                  <p class="deImg">Kit de brocas multiuso.</p>
+               </div>
+               <div class="elemento">
+                  <img src="Plugs_Scripts/Imagenes/drill9.jpg" max-width="100%"alt="Esmeriles_especializados.">
+                  <p class="deImg">Esmeril especializado.</p>
+               </div>
             </div>
 
             <div class="socios">
@@ -127,7 +214,18 @@
          <div class="direccion">
             <!--La dirección de la epresa
             y los contactos.-->
+
             <p>La direccion de la empresa</p>
+
+            <p>La dirección de la empresa</p>
+
+            <!--Google Maps API-->
+
+            <div class="container">
+               <h3>Mapa del sitio.</h3>
+        		  <div id='gmap' class="item"></div>
+            </div>
+
          </div>
          <div class="copiright">
             <!--Nombre y copyright-->
@@ -138,6 +236,37 @@
             <!--Aviso de privaciodad e iconos de redes sociales.-->
          </div>
       </footer>
+
+
+
+
+
+   <!--Todos los Scripts necesarios. -->
+
+   <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+  </script>
+   <script src="Plugs_Scripts/JQuery_Plugins/parallax.min.js" charset="utf-8"></script>
+   <script src="script.js" charset="utf-8"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqPSHyvqJ6J6hqnV6w-ErMQ11b6Y_g3nw" async defer></script>
+   <script src="Plugs_Scripts/JQuery_Plugins/app.js" charset="utf-8"></script>
+   <script src="Swiper-master/dist/js/swiper.jquery.min.js" charset="utf-8"></script>
+
+
+   <!--Inicia el Slider -->
+
+   <script>
+   $(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+     pagination: '.swiper-pagination',
+     paginationClickable: true
+     });
+  });
+   </script>
+
 
    </body>
 </html>
