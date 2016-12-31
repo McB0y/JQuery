@@ -91,6 +91,24 @@ h3{
 }
 
 
+/*Contenedor del Mapa de Google.*/
+.container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+}
+
+
+#gmap{
+   width: 80%;
+   height: 450px;
+   max-width: 100%;
+   max-height: 100vh;
+   box-shadow: 2px 2px 2px 2px;
+   margin-bottom: 20px;
+}
+
 
 /***********************Swiper Slider*********/
 .swiper-container {
