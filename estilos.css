@@ -6,6 +6,7 @@ body{
    /* NOTE: Dando Flex */
    display: flex;
    flex-direction: column;
+   background-color: rgb(106, 106, 106);
 }
 
 img{
@@ -67,6 +68,7 @@ h2,h3{
 }
 
 
+
 /***********************Terminan los estilos de la cabecera*********************/
 
 /***********************Empiezan los estilos para el main y sus elementos******/
@@ -120,7 +122,7 @@ h3{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #6c6c6c;/* NOTE: Necesita el fondo */
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -140,7 +142,7 @@ h3{
 
 /***********************Muestras.**************************/
 
-.productos{
+/*.productos{
    width: 100%;
    height: 600px;
    display: flex;
@@ -151,28 +153,27 @@ h3{
 .servicios{
    width: calc((100%/4) - 2.5%);
    margin: 2.5%;
-}
+}*/
 
 
 .contenedor{
    width: 100%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
    height: 300px;
+   display: flex;
+   flex-wrap: wrap;
    background-color: rgb(225, 170, 242);
 }
 
 .elemento{
-   width: 100%;
-   height: 100%;
+   width: 25%;
+   /*height: 100%;*/
    overflow: hidden;
 }
 .elemento > img{
    height: 300px;
 }
 
-.deImg{
+.deImg{/*Los parrafos*/
    margin: 0px;
    padding: 0px;
    width: 100%;
@@ -194,8 +195,6 @@ top: 0;
 
 /*****************Tiny-Tweaks , Off-Canvas****************/
 
-
-
 @media (max-width: 1200px){
    header{
       font-size: 1.3em;
@@ -206,6 +205,25 @@ top: 0;
    .parrafo{
       font-size: 1.3em;
    }
+   .contenedor{
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgb(225, 170, 242);
+   }
+
+   .elemento{
+      width: 50%;
+      height: 50%;
+      overflow: hidden;
+   }
+   .elemento > img{
+      width: 100%;
+      height: 300px;
+   }
+
+
 }
 
 @media (max-width: 720px){
@@ -253,4 +271,42 @@ top: 0;
       height: 32px;
       background: url("Plugs_Scripts/Imagenes/menu2.png");
    }
+   .contenedor{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgb(225, 170, 242);
+   }
+
+   .elemento{
+      width: 100%;
+      height: 350px;;
+      overflow: hidden;
+   }
+   .elemento > img{
+      width: 100%;
+      height: 100%
+   }
+   .deImg{
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      font-size: 1.2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: -354px;
+      transition: all .5s;
+   }
+   .deImg:hover{
+   top: 0;
+   }
+
+
 }
