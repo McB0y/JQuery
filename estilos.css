@@ -64,6 +64,9 @@ h2,h3{
    color: rgb(252, 118, 32);
    font-family: Yellowtail;
 }
+.magnate{
+   margin: 1em;
+}
 
 .superPolifil,.productos, .socios,footer{
    width: 100%;
@@ -86,6 +89,7 @@ h2,h3{
 .bentonita{
    text-decoration: underline;
 }
+
 
 
 /***********************Terminan los estilos de la cabecera*********************/
@@ -206,6 +210,14 @@ top: 0;
    color: rgb(244, 148, 37);
 }
 
+.sociales1{
+   font-size: 2em;
+   color: rgb(82, 82, 82);
+}
+.sociales1>i:hover{
+   transition: all .5s;
+   color: rgb(244, 148, 37);
+}
 .sociales, .copiright{
    width: 100%;
    height: 3em;
@@ -228,8 +240,6 @@ top: 0;
    display: flex;
    justify-content: space-between;
  }
-
-
 /*****************Tiny-Tweaks , Off-Canvas****************/
 
 @media (max-width: 1200px){
@@ -271,6 +281,19 @@ top: 0;
    }
    .mapa{
      font-size: 3.5em;
+   }
+   .social{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      color: rgb(244, 148, 37);
+      font-size: 1.1em;
+   }
+
+   .sociales1{
+      font-size: 1.5em;
+      color: rgb(82, 82, 82);
    }
 }
 
@@ -366,7 +389,19 @@ top: 0;
    .mapa{
      font-size: 2.5em;
    }
+   .social{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      color: rgb(244, 148, 37);
+      font-size: 1.1em;
+   }
 
+   .sociales1{
+      font-size: 1.1em;
+      color: rgb(82, 82, 82);
+   }
 }
 
 @media (max-width: 450px){
@@ -378,5 +413,18 @@ top: 0;
    }
    .mapa{
      font-size: 2em;
+   }
+   .social{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      color: rgb(244, 148, 37);
+      font-size: 1em;
+   }
+
+   .sociales1{
+      font-size: 1em;
+      color: rgb(82, 82, 82);
    }
 }
