@@ -182,6 +182,23 @@ h3{
 top: 0;
 }
 
+/* NOTE: La seccion de distribuidores */
+.partner{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   font-size:1.7em;
+}
+.container1{
+background-color: rgb(147, 142, 142);
+width: 100%;
+height: 20em;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
 
 /*Empiezan los estilos del footer.*/
 .container{
@@ -240,6 +257,8 @@ top: 0;
    display: flex;
    justify-content: space-between;
  }
+
+
 /*****************Tiny-Tweaks , Off-Canvas****************/
 
 @media (max-width: 1200px){
@@ -278,6 +297,9 @@ top: 0;
    .parrafo1{
       margin: 1em;
       font-size: 1.4em;
+   }
+   .partner{
+      font-size:1.4em;
    }
    .mapa{
      font-size: 3.5em;
@@ -386,6 +408,9 @@ top: 0;
       margin: 1em;
       font-size: 1.2em;
    }
+   .partner{
+      font-size:1.3em;
+   }
    .mapa{
      font-size: 2.5em;
    }
@@ -410,6 +435,13 @@ top: 0;
       flex-direction: column;
       width: 100%;
       height: 125vh;
+   }
+   .partner{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      font-size:1.1em;
    }
    .mapa{
      font-size: 2em;
