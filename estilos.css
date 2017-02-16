@@ -7,8 +7,10 @@ body{
    display: flex;
    flex-direction: column;
    /*background-color: rgb(147, 142, 142);*/
-   background-color: #6c6c6c;
-   /*background-color: rgb(255, 225, 20);*/
+
+/*    background-color: #6c6c6c; */
+    background-image: linear-gradient(rgb(255, 174, 65), rgb(241, 85, 42));
+
 }
 
 img{
@@ -127,7 +129,8 @@ h3{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #6c6c6c;/* NOTE: Necesita el fondo */
+/*     background: #6c6c6c;NOTE: Necesita el fondo */
+   background-color: transparent;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -194,7 +197,8 @@ top: 0;
 }
 .container1{
 /*background-color: rgb(147, 142, 142);*/
-background-color: #6c6c6c;
+/* background-color: #6c6c6c; */
+background-color: transparent;
 width: 100%;
 height: 20em;
 display: flex;
@@ -213,6 +217,7 @@ align-items: center;
 .mapa{
   font-size: 4.5em;
 }
+
 
 #gmap{
    width: 50%;
